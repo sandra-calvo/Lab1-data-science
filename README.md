@@ -19,8 +19,9 @@ In this guide, you will:
 # Introduction 
 --> Introduce the workshop and maybe add a picture of how watson studio and the other services we are going to use in this workshop fit together.
 
-![](/screenshots/Tools.png?raw=true)
+![](/images/Tools.png?raw=true)
 **IBM Cloud**
+
 **Watson Studio**
 
 # PHASE 1
