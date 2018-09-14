@@ -10,7 +10,7 @@ In this guide, you will:
   - [PHASE 5](#phase-5): Create an application that uses custom ML model 
   - [PHASE 6](#phase-6): Data science with Jupyter Notebooks in Python, R or Scala
 
-![](/screenshots/PictureX.png?raw=true)
+
 
 #### Prerequisites
 - Register on IBM Cloud at https://bluemix.net
@@ -18,9 +18,10 @@ In this guide, you will:
 
 # Introduction 
 --> Introduce the workshop and maybe add a picture of how watson studio and the other services we are going to use in this workshop fit together.
+
+![](/screenshots/Tools.png?raw=true)
 **IBM Cloud**
 **Watson Studio**
-
 
 # PHASE 1
 # Data Preparation using Data Refinery
