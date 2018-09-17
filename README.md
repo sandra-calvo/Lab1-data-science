@@ -27,16 +27,11 @@ In this guide, you will:
 **Watson Studio** is an integrated environment designed to make it easy to develop, train, manage models and deploy AI-powered applications. It is a solution delivered on the IBM Cloud. Watson Studio provides a suite of tools for data scientists, application developers and subject matter experts to collaboratively and easily work with data.
 
 # PHASE 1
-# Data Preparation using Data Refinery
+## Data Preparation using Data Refinery
 
 **Data Refinery** it’s a self-service data preparation client for data scientists, data engineers, and business analysts. With it, you can quickly transform large amounts of raw data into consumable, quality information that’s ready for analytics. Data Refinery makes it easy to explore, prepare, and deliver data that people across your organization can trust.
-For more information: https://developer.ibm.com/clouddataservices/docs/ibm-data-science-experience/data-refinery/ 
 
-Refining data consists of cleansing and shaping it. When you cleanse data, you fix or remove data that is incorrect, incomplete, improperly formatted, or duplicated. And when you shape data, you customize it by filtering, sorting, combining or removing columns, and performing operations.
-
-As you manipulate your data, you build a customized data flow that you can modify in real time and save for future re-use. When you save the refined data set, you typically load it to a different location than where you read it from. In this way, your source data can remain untouched by the refinement process.
-
-## Step 1 
+## Step 1: Create a Watson Studio Project
 Before we start with the data preparation we need to create a project in Watson Studio. In order to create a project login to Watson Studio: https://eu-gb.dataplatform.ibm.com/ 
 **Notice** I am using the UK platform. 
 
@@ -58,11 +53,36 @@ Click _Add_ to connect with your existing instance or to create a new one. If yo
 
 A new window will be prompted to confirm the creating of the service. Confirm the plan is Lite, resource group is default and you can edit the name of the service if you want. When you are ready click on _Confirm_.
 ![](/images/Picture5.png?raw=true)
+
+Click on _Refresh_ and you will see the Cloud Object Storage service associated with the project. Click on _Create_.
+![](/images/Picture6.png?raw=true)
+
+Your project is ready! 👍
+
+## Step 2: Add data to your project
+
+After you create a project, you add data assets to it so that you can work with data. All the collaborators in the project are automatically authorized to access the data in the project. 
+You can add data assets from these sources to legacy projects:
+
+    Local files
+    Community
+    Database connections
     
-    Click Create. Your new project opens and you can start adding resources to it.
+In this lab we will add a simple .csv file. Download the file from this link: **BOX LINK WITH THE DATA SET**
+Password will be delivered during the workshop. 
 
-The object storage bucket name for the project is based on the project name without spaces or non-alphanumberic characters plus a unique identifier. 
+You can add a file as a data asset from your local system to your project.
+From your project's _Assets_ page, click the Find and add data icon (![](/images/Icon1.png?raw=true)).
+Browse the file or drag them onto the Load pane.
+![](/images/Picture7.png?raw=true)
 
+The files are saved in the object storage that is associated with your project and are listed as data assets on the Assets page of your project.
+
+## Step 3: Data refinery
+
+Refining data consists of cleansing and shaping it. When you cleanse data, you fix or remove data that is incorrect, incomplete, improperly formatted, or duplicated. And when you shape data, you customize it by filtering, sorting, combining or removing columns, and performing operations.
+
+As you manipulate your data, you build a customized data flow that you can modify in real time and save for future re-use. When you save the refined data set, you typically load it to a different location than where you read it from. In this way, your source data can remain untouched by the refinement process.
 
 SANDRA!!! --> https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?audience=wdp&context=wdp&linkInPage=true
 
