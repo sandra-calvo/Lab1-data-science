@@ -20,7 +20,7 @@ The purpose of this lab is to guide the user in the data science life cycle from
 
 **IBM Cloud** is a suite of cloud computing services from IBM that offers both platform as a service (PaaS) and infrastructure as a service (IaaS). 
 
-![](/images/IBMCloud.png?raw=true)
+<img src="/images/IBMCloud.png" width="70%" height="70%">
 
 **Watson Studio** is an integrated environment designed to make it easy to develop, train, manage models and deploy AI-powered applications. It is a solution delivered on the IBM Cloud. Watson Studio provides a suite of tools for data scientists, application developers and subject matter experts to collaboratively and easily work with data.
 
