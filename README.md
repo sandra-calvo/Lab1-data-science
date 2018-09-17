@@ -72,7 +72,8 @@ In this lab we will add a simple .csv file. Download the file from this link: **
 Password will be delivered during the workshop. 
 
 You can add a file as a data asset from your local system to your project.
-From your project's _Assets_ page, click the Find and add data icon (![](/images/Icon1.png?raw=true)).
+From your project's _Assets_ page, click the Find and add data icon (<img src="/images/Icon1.png" width="30%" height="30%">).
+
 Browse the file or drag them onto the Load pane.
 ![](/images/Picture7.png?raw=true)
 
