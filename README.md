@@ -24,7 +24,9 @@ The purpose of this lab is to guide the user in the data science life cycle from
 
 **Watson Studio** is an integrated environment designed to make it easy to develop, train, manage models and deploy AI-powered applications. It is a solution delivered on the IBM Cloud. Watson Studio provides a suite of tools for data scientists, application developers and subject matter experts to collaboratively and easily work with data.
 
-In the picture below you can see the IBM Cloud tools we are going to use in this workshop:
+![](/images/Tools.png?raw=true)
+
+In the picture above you can see the collection of IBM Cloud tools we are going to use in this workshop:
 
       - Watson Studio  - Data science, ML
       - Cloud Object Storage -  Storage
@@ -32,7 +34,6 @@ In the picture below you can see the IBM Cloud tools we are going to use in this
       - Node-RED - Application logic
       - Watson Assistant - Bot service integration 
 
-![](/images/Tools.png?raw=true)
 
 # PHASE 1
 ## Data Preparation using Data Refinery
@@ -41,8 +42,6 @@ In the picture below you can see the IBM Cloud tools we are going to use in this
 
 ## Step 1: Create a Watson Studio Project
 Before we start with the data preparation we need to create a project in Watson Studio. In order to create a project login to Watson Studio: https://eu-gb.dataplatform.ibm.com/ 
-
-**Notice** I am using the UK platform. 
 
 To create a project with all tools click on the _New Project_ icon in the dashboard. 
 ![](/images/Picture1.png?raw=true)
@@ -55,7 +54,7 @@ On the New project screen, add a name and optional description for the project.
 You could restric who can be a collaborator. For example, if you want to restrict the project to internal users for security reasons. In this case we don't need to apply any restrictions. 
 Choose whether to restrict who you can add as a collaborators. You can't change this setting after you create the project.
 
-<img src="/images/Picture3.png" width="50%" height="50%">
+<img src="/images/Picture3.png" width="80%" height="80%">
 
 Every project needs a Cloud Object Storage service associated. **Cloud Object Storage** is storage for the cloud. Essentially a key-value store, files (or any binary data) are given an identifying key (or name) and stored as an 'object' in a uniquely named 'bucket' or 'container'. 
 
