@@ -48,22 +48,24 @@ To create a project with all tools click on the _New Project_ icon in the dashbo
 ![](/images/Picture1.png?raw=true)
 
 Next you will see the different types of projects available in Watson Studio. For this lab we will use the _Complete_ project. Select that and click on _OK_.
-<img src="/images/Picture2.png" width="50%" height="50%">
+
+<img src="/images/Picture2.png" width="60%" height="60%">
 
 On the New project screen, add a name and optional description for the project.
 You could restric who can be a collaborator. For example, if you want to restrict the project to internal users for security reasons. In this case we don't need to apply any restrictions. 
 Choose whether to restrict who you can add as a collaborators. You can't change this setting after you create the project.
 
-<img src="/images/Picture2.png" width="50%" height="50%">
+<img src="/images/Picture3.png" width="50%" height="50%">
 
 Every project needs a Cloud Object Storage service associated. **Cloud Object Storage** is storage for the cloud. Essentially a key-value store, files (or any binary data) are given an identifying key (or name) and stored as an 'object' in a uniquely named 'bucket' or 'container'. 
 
 Click _Add_ to connect with your existing instance or to create a new one. If you have an existing Object Storage instance select the "Existing" tab and connect with your instance. If you need to create a new Object Storage select the pricing plan, in this case Lite, the free plan, is enough. Then click on _Create_.
 
-<img src="/images/Picture4.png" width="50%" height="50%">
+<img src="/images/Picture4.png" width="80%" height="80%">
 
 A new window will be prompted to confirm the creating of the service. Confirm the plan is Lite, resource group is default and you can edit the name of the service if you want. When you are ready click on _Confirm_.
-![](/images/Picture5.png?raw=true)
+
+<img src="/images/Picture5.png" width="50%" height="50%">
 
 Click on _Refresh_ and you will see the Cloud Object Storage service associated with the project. Click on _Create_.
 ![](/images/Picture6.png?raw=true)
@@ -145,7 +147,7 @@ SANDRA!!! --> https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_
  
 #### Your Node-RED flow is all set! Enter your credentials to access the editor.
 
-![](/images/App8.png?raw=true)
+<img src="/images/App8.png" width="70%" height="70%">
  
 Now click Go to your Node-RED flow editor to open the flow editor.
 
