@@ -127,20 +127,20 @@ Click _Save and Run_.
 **SANDRA** https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?context=analytics&linkInPage=true
 
 # PHASE 2
-# Data analysis using Modeler
+## Data analysis using Modeler
 **Modele: Flow editor** You can create a machine learning flow, which is a graphical representation of a data model, or a deep learning flow, which is a graphical representation of a neural network design, by using the Flow Editor. Use it to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file.
 
 
 # PHASE 3
-# Create your custom machine learning model
+## Create your custom machine learning model
 
 
 # PHASE 4
-# Deploy ML model
+## Deploy ML model
 **IBM Watson Machine Learning** is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications. The Machine Learning service is a set of REST APIs that you can call from any programming language to develop applications that make smarter decisions, solve tough problems, and improve user outcomes.
 
 # PHASE 5
-# Create an application that uses custom ML model 
+## Create an application that uses custom ML model 
 
 ## Step X. Create a Node-RED application
 
@@ -241,7 +241,7 @@ Awesome, you web app is ready! Now you can interact with the machine learning mo
 
 
 # PHASE 6
-# Data science with Jupyter Notebooks in Python, R or Scala
+## Data science with Jupyter Notebooks in Python, R or Scala
 A Jupyter notebook is a web-based environment for interactive computing. You can run small pieces of code that process your data, and you can immediately view the results of your computation. Notebooks include all of the building blocks you need to work with data:
 
     The data
