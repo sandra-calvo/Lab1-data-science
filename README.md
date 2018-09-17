@@ -102,7 +102,105 @@ SANDRA!!! --> https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_
 
 # PHASE 5
 # Create an application that uses custom ML model 
+
+## Step X. Create a Node-RED application
+
 **Node-RED** is a visual tool for wiring the internet of things - connecting hardware devices, APIs and online services in a new and interesting way. Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide range nodes in the palette. Flows can be then deployed to the runtime in a single-click.
+
+1. In a browser navigate to https://bluemix.net
+2.	Select 'LOG IN' then enter your log in information and press 'SIGN IN'.  You should see your dashboard. 
+3.	Select the 'CATALOG' view.
+![](/screenshots/Picture1.png?raw=true)
+4.	Locate the Node-RED started service and click on it. 
+<img src="/screenshots/Picture2.png" width="50%" height="50%">
+
+5.	Enter a name for your application, as shown below (host will automatically be completed). The host name must be unique on IBM Cloud, so please choose a name with your company name or initials to try to make a unique name.  Press 'CREATE'. 
+![](/screenshots/Picture3.png?raw=true)
+ 
+6.	Your application is now staging and will be up and running in a short while. Click 'OVERVIEW' to see information about your application. 
+*Note: If you are using Lite accounts your application will be in an awake mode. That means that if after 10 days your application has not been used IBM will stop it.*
+![](/screenshots/PictureX.png?raw=true)
+
+7.	When fully staged, click on the View app link, next to the green or half green circle, this launches the Node-RED main page. 
+![](/screenshots/Picture3b.png?raw=true)
+
+<img src="/screenshots/Picture4.png" width="50%" height="50%">
+  
+8.	Configure your Node-RED editor. In this section, you will set up a username and password to protect your flow. 
+<img src="/screenshots/Picture5.png" width="50%" height="50%">
+
+9.	Write an username and a password of your choice and click 'Next'. Remember that it does not have to be related to your IBM Cloud ID. 
+<img src="/screenshots/Picture6.png" width="50%" height="50%">
+ 
+#### Your Node-RED flow is all set! Enter your credentials to access the editor.
+
+![](/screenshots/Picture8.png?raw=true)
+ 
+Now click Go to your Node-RED flow editor to open the flow editor.
+
+10.	When using Node-RED we build our apps using this graphical editor interface to wire together the blocks we need. We can simply drag and drop the blocks from the left menu into the workspace in the center of the screen and connect them to create a new flow. 
+
+Note: If you get an "Authorization denied" message when deploying your applications make your sure you are logged in. Click on the icon on the top right side of the Node-RED canvas and login with the credentials you created in the previous steps. 
+
+## Step X: Add new nodes to the Node-RED palette
+We are going to add new nodes to the Node-RED palette directly from the Node-RED window. For this lab we need the following nodes:
+
+      - node-red-dashboard
+
+In the Node-RED window click on the three lines on the top right corner and in the menu, click on the "Manage palette". This will open the node menu where you can add new nodes to your application. 
+
+<img src="/screenshots/Picture23.png" width="30%" height="30%">
+
+You will see the nodes that are installed by default and if you go to the 'install' tab you can search for any node package and add it directly to your app.
+
+<img src="/screenshots/Picture24.png" width="50%" height="50%">
+             
+Search for the dashboard nodes by writing 'dashboard'. This will return multiple node packages, you need to install the package 'node-red-dashboard'. Find it in the search results and click on install. 
+
+<img src="/screenshots/Picture25.png" width="50%" height="50%">
+ 
+This will prompt a window to confirm the installation. Click on install and wait few minutes, the application may require a restart. Click "Done" to close the left side menu. 
+
+<img src="/screenshots/Picture26.png" width="50%" height="50%">
+
+After few seconds you will see the new nodes in your Node-RED palette.
+
+## Step X: Import the Node-RED application flow
+In this section we will build a simple flow to represent the user interface that will interact with our ML model created in Watson Studio. 
+
+Copy the content of the **ApplicationFlow.json** file. 
+Import the flow by simply clickcing on the 3 white lines on the top right corner of the Node-RED window.  Import - Clipboard.
+
+<img src="/screenshots/Picture27.png" width="50%" height="50%">
+
+Paste the text you copied from the file. 
+
+<img src="/screenshots/Picture28.png" width="50%" height="50%">
+
+The flow will create a new flow window named 'ML-UI'. This flow reads input data from the user and calls the ML model to give a prediction in the UI. 
+![](/screenshots/Picture29.png?raw=true)
+ 
+You will need to do some editing on few nodes.
+**EDIT ML CREDENTIALS**
+
+It also possible to change the looks of your user interface in the dashboard tab. 
+
+<img src="/screenshots/Picture30.png" width="50%" height="50%">
+
+Deploy your application changes from the Deploy button on the top right side of the screeen. 
+
+## Step X. Check your webapp UI! 
+The dashboard nodes added an UI to our Node-RED application. To access the UI go to:
+http://yourAppName.eu-gb.mybluemix.net/ui - UK
+
+
+
+Remember that if you are in US, Germany Sydney the addredd will look slightly different:
+http://yourAppName.mybluemix.net/ui - US South
+http://yourAppName.eu-de.mybluemix.net/ui - Germany
+http://yourAppName.au-syd.mybluemix.net/ui - Sydney
+
+Awesome, you web app is ready! Now you can interact with the machine learning model you created from the webapp. :+1:
 
 
 # PHASE 6
