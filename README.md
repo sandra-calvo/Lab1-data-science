@@ -3,7 +3,7 @@
 ## Introduction 
 In this guide, you will:
   - [Introduction](#introduction)
-  - [PHASE 1]: Data Preparation using Data Refinery (#phase-1)
+  - [PHASE 1]:Data Preparation using Data Refinery (#phase-1)
   - [PHASE 2](#phase-2): Data analysis using Modeler
   - [PHASE 3](#phase-3): Create your custom machine learning model 
   - [PHASE 4](#phase-4): Deploy ML model 
