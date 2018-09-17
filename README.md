@@ -80,10 +80,8 @@ You can add data assets from these sources to legacy projects:
     Community
     Database connections
     
-In this lab we will add a simple .csv file. Download the file from this link: **BOX LINK WITH THE DATA SET**
-Password will be delivered during the workshop. 
+In this lab we will add a simple .csv file from our local collection. Download the file from this link: **BOX LINK WITH THE DATA SET** Password will be delivered during the workshop. 
 
-You can add a file as a data asset from your local system to your project.
 From your project's _Assets_ page, click the Find and add data icon (<img src="/images/Icon1.png" width="3%" height="3%">).
 
 Browse the file or drag them onto the Load pane.
@@ -97,7 +95,36 @@ Refining data consists of cleansing and shaping it. When you cleanse data, you f
 
 As you manipulate your data, you build a customized data flow that you can modify in real time and save for future re-use. When you save the refined data set, you typically load it to a different location than where you read it from. In this way, your source data can remain untouched by the refinement process.
 
-SANDRA!!! --> https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?audience=wdp&context=wdp&linkInPage=true
+If you want to be able to save refined data to cloud or on-premises data sources, create connections for this purpose. Source connections can only be used to read data; target connections can only be used to load (save) data. 
+
+In this lab we will create a new .csv file with our refined data set. 
+
+Open Data Refinery by clicking Tools > Data Refinery.
+
+<img src="/images/PictureX.png" width="50%" height="50%">
+
+Select the project you want to work in and then click _Select Data_ to select the data you want to work with.
+
+<img src="/images/PictureX.png" width="60%" height="60%">
+
+On the Data tab, apply operations to cleanse, shape, and enrich your data. You can enter R code in the command line and let autocomplete assist you in getting the syntax right. Or you can use the Operations menu to browse operation categories or search for a specific operation, then let the UI guide you.
+
+**--> OPERATIONS TO THE SAMPLE DATA DESCRIBED**
+
+Validate your data throughout the data refinement process.
+Use visualizations to gain insights into your data and to uncover patterns, trends, and correlations within your data.
+
+When you've refined the sample data set to suit your needs, click the _Run data flow_ icon in the toolbar to run the data flow on the entire data set.
+
+By default, Data Refinery uses the name of the data source to name the data flow and the target data set. You can change these names, but you can't change the project that these data assets belong to.
+
+a. In the Data flow details pane, optionally edit the name of the data flow and enter a description for it. You can also add a one-time or repeating schedule for the data flow.
+
+b. In the Data flow output pane, optionally edit the name of the target data set and enter a description for it. You can save the target data set to the project, to a connection, or to a connected data asset . If you save it to the project, you can save it as a new data asset (by default) or you can replace an existing data asset. To save the target data set to a connection or as a connected data asset or to replace an existing data asset, use Change Location.
+
+Click _Save and Run_.
+
+**SANDRA** https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?context=analytics&linkInPage=true
 
 # PHASE 2
 # Data analysis using Modeler
