@@ -2,7 +2,7 @@
 
 ## Introduction 
 In this guide, you will:
-  - [Introduction](#introduction): 
+  - [Introduction](#introduction)
   - [PHASE 1](#phase-1): Data Preparation using Data Refinery
   - [PHASE 2](#phase-2): Data analysis using Modeler
   - [PHASE 3](#phase-3): Create your custom machine learning model 
@@ -16,7 +16,13 @@ In this guide, you will:
   - Create a free account www.bluemix.net
 
 # Introduction 
---> Introduce the workshop and maybe add a picture of how Watson Studio and the other services we are going to use in this workshop fit together.
+The purpose of this lab is to guide the user in the data science life cycle from raw data to an application with a machine learning model. All this using IBM Cloud tools. 
+In the picture below you can see the IBM Cloud tools we are going to use in this workshop:
+    - Watson Studio  - Data science, ML
+    - Cloud Object Storage -  Storage
+    - Watson Machine Learning - ML Model deployment
+    - Node-RED - Application logic
+    - Watson Assistant - Bot service integration 
 
 ![](/images/Tools.png?raw=true)
 
@@ -192,8 +198,6 @@ Deploy your application changes from the Deploy button on the top right side of 
 ## Step X. Check your webapp UI! 
 The dashboard nodes added an UI to our Node-RED application. To access the UI go to:
 http://yourAppName.eu-gb.mybluemix.net/ui - UK
-
-
 
 Remember that if you are in US, Germany Sydney the addredd will look slightly different:
 http://yourAppName.mybluemix.net/ui - US South
