@@ -3,7 +3,7 @@
 ## Introduction 
 In this guide, you will:
   - [Introduction](#introduction)
-  - [PHASE 1](#phase-1): Data Preparation using Data Refinery
+  - [PHASE 1]: Data Preparation using Data Refinery (#phase-1)
   - [PHASE 2](#phase-2): Data analysis using Modeler
   - [PHASE 3](#phase-3): Create your custom machine learning model 
   - [PHASE 4](#phase-4): Deploy ML model 
@@ -35,8 +35,7 @@ In the picture above you can see the collection of IBM Cloud tools we are going 
       - Watson Assistant - Bot service integration 
 
 
-# PHASE 1
-## Data Preparation using Data Refinery
+# PHASE 1: Data Preparation using Data Refinery
 
 **Data Refinery** it’s a self-service data preparation client for data scientists, data engineers, and business analysts. With it, you can quickly transform large amounts of raw data into consumable, quality information that’s ready for analytics. Data Refinery makes it easy to explore, prepare, and deliver data that people across your organization can trust.
 
