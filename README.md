@@ -11,18 +11,20 @@ In this guide, you will:
   - [PHASE 6](#phase-6): Data science with Jupyter Notebooks in Python, R or Scala
 
 
-
 #### Prerequisites
-- Register on IBM Cloud at https://bluemix.net
-
+- IBM Cloud account
+  - Create a free account www.bluemix.net
 
 # Introduction 
---> Introduce the workshop and maybe add a picture of how watson studio and the other services we are going to use in this workshop fit together.
+--> Introduce the workshop and maybe add a picture of how Watson Studio and the other services we are going to use in this workshop fit together.
 
 ![](/images/Tools.png?raw=true)
-**IBM Cloud**
 
-**Watson Studio**
+**IBM Cloud** is a suite of cloud computing services from IBM that offers both platform as a service (PaaS) and infrastructure as a service (IaaS). 
+
+![](/images/IBMCloud.png?raw=true)
+
+**Watson Studio** is an integrated environment designed to make it easy to develop, train, manage models and deploy AI-powered applications. It is a solution delivered on the IBM Cloud. Watson Studio provides a suite of tools for data scientists, application developers and subject matter experts to collaboratively and easily work with data.
 
 # PHASE 1
 # Data Preparation using Data Refinery
@@ -33,6 +35,34 @@ For more information: https://developer.ibm.com/clouddataservices/docs/ibm-data-
 Refining data consists of cleansing and shaping it. When you cleanse data, you fix or remove data that is incorrect, incomplete, improperly formatted, or duplicated. And when you shape data, you customize it by filtering, sorting, combining or removing columns, and performing operations.
 
 As you manipulate your data, you build a customized data flow that you can modify in real time and save for future re-use. When you save the refined data set, you typically load it to a different location than where you read it from. In this way, your source data can remain untouched by the refinement process.
+
+## Step 1 
+Before we start with the data preparation we need to create a project in Watson Studio. In order to create a project login to Watson Studio: https://eu-gb.dataplatform.ibm.com/ 
+**Notice** I am using the UK platform. 
+
+To create a project with all tools click on the _New Project_ icon in the dashboard. 
+![](/images/Picture1.png?raw=true)
+
+Next you will see the different types of projects available in Watson Studio. For this lab we will use the _Complete_ project. Select that and click on _OK_.
+![](/images/Picture2.png?raw=true)
+
+On the New project screen, add a name and optional description for the project.
+You could restric who can be a collaborator. For example, if you want to restrict the project to internal users for security reasons. In this case we don't need to apply any restrictions. 
+Choose whether to restrict who you can add as a collaborators. You can't change this setting after you create the project.
+![](/images/Picture3.png?raw=true)
+
+Every project needs a Cloud Object Storage service associated. **Cloud Object Storage** is storage for the cloud. Essentially a key-value store, files (or any binary data) are given an identifying key (or name) and stored as an 'object' in a uniquely named 'bucket' or 'container'. 
+
+Click _Add_ to connect with your existing instance or to create a new one. If you have an existing Object Storage instance select the "Existing" tab and connect with your instance. If you need to create a new Object Storage select the pricing plan, in this case Lite, the free plan, is enough. Then click on _Create_.
+![](/images/Picture4.png?raw=true)
+
+A new window will be prompted to confirm the creating of the service. Confirm the plan is Lite, resource group is default and you can edit the name of the service if you want. When you are ready click on _Confirm_.
+![](/images/Picture5.png?raw=true)
+    
+    Click Create. Your new project opens and you can start adding resources to it.
+
+The object storage bucket name for the project is based on the project name without spaces or non-alphanumberic characters plus a unique identifier. 
+
 
 SANDRA!!! --> https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?audience=wdp&context=wdp&linkInPage=true
 
