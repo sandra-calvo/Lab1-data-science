@@ -17,6 +17,12 @@ In this guide, you will:
 
 # Introduction 
 The purpose of this lab is to guide the user in the data science life cycle from raw data to an application with a machine learning model. All this using IBM Cloud tools. 
+
+**IBM Cloud** is a suite of cloud computing services from IBM that offers both platform as a service (PaaS) and infrastructure as a service (IaaS). 
+
+![](/images/IBMCloud.png?raw=true)
+
+**Watson Studio** is an integrated environment designed to make it easy to develop, train, manage models and deploy AI-powered applications. It is a solution delivered on the IBM Cloud. Watson Studio provides a suite of tools for data scientists, application developers and subject matter experts to collaboratively and easily work with data.
 In the picture below you can see the IBM Cloud tools we are going to use in this workshop:
 
       - Watson Studio  - Data science, ML
@@ -27,11 +33,6 @@ In the picture below you can see the IBM Cloud tools we are going to use in this
 
 ![](/images/Tools.png?raw=true)
 
-**IBM Cloud** is a suite of cloud computing services from IBM that offers both platform as a service (PaaS) and infrastructure as a service (IaaS). 
-
-![](/images/IBMCloud.png?raw=true)
-
-**Watson Studio** is an integrated environment designed to make it easy to develop, train, manage models and deploy AI-powered applications. It is a solution delivered on the IBM Cloud. Watson Studio provides a suite of tools for data scientists, application developers and subject matter experts to collaboratively and easily work with data.
 
 # PHASE 1
 ## Data Preparation using Data Refinery
@@ -79,7 +80,7 @@ In this lab we will add a simple .csv file. Download the file from this link: **
 Password will be delivered during the workshop. 
 
 You can add a file as a data asset from your local system to your project.
-From your project's _Assets_ page, click the Find and add data icon (<img src="/images/Icon1.png" width="30%" height="30%">).
+From your project's _Assets_ page, click the Find and add data icon (<img src="/images/Icon1.png" width="10%" height="10%">).
 
 Browse the file or drag them onto the Load pane.
 ![](/images/Picture7.png?raw=true)
