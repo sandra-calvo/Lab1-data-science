@@ -3,7 +3,7 @@
 ## Introduction 
 In this guide, you will:
   - [Introduction](#introduction)
-  - [PHASE 1]:Data Preparation using Data Refinery (#phase-1)
+  - [PHASE 1](#phase-1): Data Preparation using Data Refinery
   - [PHASE 2](#phase-2): Data analysis using Modeler
   - [PHASE 3](#phase-3): Create your custom machine learning model 
   - [PHASE 4](#phase-4): Deploy ML model 
@@ -137,6 +137,35 @@ Click _Save and Run_.
 # PHASE 4
 ## Deploy ML model
 **IBM Watson Machine Learning** is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications. The Machine Learning service is a set of REST APIs that you can call from any programming language to develop applications that make smarter decisions, solve tough problems, and improve user outcomes.
+
+To design, train, and deploy machine learning models in IBM Watson Studio, you need to associate an IBM Watson Machine Learning service instance, as well as some supporting services (such as IBM Cloud Object Storage), with a project.
+
+Services are added in the _Settings_ page of your project in Watson Studio.
+
+<img src="/images/Model1.png" width="100%" height="100%">
+
+Click _Add service_ under Associated Services and choose Watson.
+
+<img src="/images/Model2.png" width="100%" height="100%">
+
+Select Watson Machine Learning from the Catalog and click _Add_.
+
+<img src="/images/Model3.png" width="100%" height="100%">
+
+If you already have a service created in IBM Cloud you can connect that to your project in the _Existing_ tab. In this case we are going to create a new machine learning instance. 
+Select the Lite plan, for this workshop the free plan will be enough. Then click on _Create_.
+
+<img src="/images/Model4.png" width="100%" height="100%">
+
+You will need to confirm the creation of the service. In this step it is possible to change the name of the service. Feel free to edit the name and then click on _Confirm_.
+
+<img src="/images/Model5.png" width="50%" height="50%">
+
+Great! You created a Watson Machine Learning service and associated it with your Watson Studio project. In the list of services connected to the project you should see now Watson machine learning. 
+
+<img src="/images/Model6.png" width="100%" height="100%">
+
+
 
 # PHASE 5
 ## Create an application that uses custom ML model 
