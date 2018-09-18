@@ -142,7 +142,7 @@ To design, train, and deploy machine learning models in IBM Watson Studio, you n
 
 Services are added in the _Settings_ page of your project in Watson Studio.
 
-<img src="/images/Model1.png" width="100%" height="100%">
+<img src="/images/Model1.png" width="70%" height="70%">
 
 Click _Add service_ under Associated Services and choose Watson.
 
@@ -163,7 +163,7 @@ You will need to confirm the creation of the service. In this step it is possibl
 
 Great! You created a Watson Machine Learning service and associated it with your Watson Studio project. In the list of services connected to the project you should see now Watson machine learning. 
 
-<img src="/images/Model6.png" width="100%" height="100%">
+<img src="/images/Model6.png" width="70%" height="70%">
 
 
 
