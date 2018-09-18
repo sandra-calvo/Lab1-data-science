@@ -88,7 +88,8 @@ You can add data assets from these sources to legacy projects:
     Community
     Database connections
     
-In this lab we will add a simple .csv file from our local collection. Download the file from this link: **BOX LINK WITH THE DATA SET** Password will be delivered during the workshop. 
+In this lab we will add a simple .csv file from our local collection. 
+Download the file from this link: https://ibm.box.com/v/dataset - Password will be delivered during the workshop - 
 
 From your project's _Assets_ page, click the Find and add data icon (<img src="/images/Icon1.png" width="3%" height="3%">).
 
