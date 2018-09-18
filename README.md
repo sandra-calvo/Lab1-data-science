@@ -132,14 +132,20 @@ Click _Save and Run_.
 ## Data analysis using Modeler
 **Modele: Flow editor** You can create a machine learning flow, which is a graphical representation of a data model, or a deep learning flow, which is a graphical representation of a neural network design, by using the Flow Editor. Use it to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file.
 
+## Step 4: 
+
+## Step 5:
 
 # PHASE 3
 ## Create your custom machine learning model
 
+## Step 6:
 
 # PHASE 4
 ## Deploy ML model
 **IBM Watson Machine Learning** is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications. The Machine Learning service is a set of REST APIs that you can call from any programming language to develop applications that make smarter decisions, solve tough problems, and improve user outcomes.
+
+## Step 7: Create a Watson machine learing service
 
 To design, train, and deploy machine learning models in IBM Watson Studio, you need to associate an IBM Watson Machine Learning service instance, as well as some supporting services (such as IBM Cloud Object Storage), with a project.
 
@@ -168,12 +174,15 @@ Great! You created a Watson Machine Learning service and associated it with your
 
 <img src="/images/Model6.png" width="70%" height="70%">
 
+## Step 8: Deploy the ML model
+
+## Step 9: Test the ML model
 
 
 # PHASE 5
 ## Create an application that uses custom ML model 
 
-## Step X. Create a Node-RED application
+## Step 10. Create a Node-RED application
 
 **Node-RED** is a visual tool for wiring the internet of things - connecting hardware devices, APIs and online services in a new and interesting way. Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide range nodes in the palette. Flows can be then deployed to the runtime in a single-click.
 
@@ -212,7 +221,7 @@ Now click Go to your Node-RED flow editor to open the flow editor.
 
 Note: If you get an "Authorization denied" message when deploying your applications make your sure you are logged in. Click on the icon on the top right side of the Node-RED canvas and login with the credentials you created in the previous steps. 
 
-## Step X: Add new nodes to the Node-RED palette
+## Step 11: Add new nodes to the Node-RED palette
 We are going to add new nodes to the Node-RED palette directly from the Node-RED window. For this lab we need the following nodes:
 
       - node-red-dashboard
@@ -235,7 +244,7 @@ This will prompt a window to confirm the installation. Click on install and wait
 
 After few seconds you will see the new nodes in your Node-RED palette.
 
-## Step X: Import the Node-RED application flow
+## Step 12: Import the Node-RED application flow
 In this section we will build a simple flow to represent the user interface that will interact with our ML model created in Watson Studio. 
 
 Copy the content of the **ApplicationFlow.json** file. 
@@ -259,7 +268,7 @@ It also possible to change the looks of your user interface in the dashboard tab
 
 Deploy your application changes from the Deploy button on the top right side of the screeen. 
 
-## Step X. Check your webapp UI! 
+## Step 13. Check your webapp UI! 
 The dashboard nodes added an UI to our Node-RED application. To access the UI go to:
 http://yourAppName.eu-gb.mybluemix.net/ui - UK
 
