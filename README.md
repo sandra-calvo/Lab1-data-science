@@ -100,13 +100,15 @@ In this lab we will create a new .csv file with our refined data set.
 
 Open Data Refinery by clicking Tools > Data Refinery.
 
-<img src="/images/PictureX.png" width="50%" height="50%">
+<img src="/images/DR1.png" width="50%" height="50%">
 
 Select the project you want to work in and then click _Select Data_ to select the data you want to work with.
 
-<img src="/images/PictureX.png" width="60%" height="60%">
+<img src="/images/DR2.png" width="100%" height="100%">
 
 On the Data tab, apply operations to cleanse, shape, and enrich your data. You can enter R code in the command line and let autocomplete assist you in getting the syntax right. Or you can use the Operations menu to browse operation categories or search for a specific operation, then let the UI guide you.
+
+<img src="/images/DR3.png" width="60%" height="60%">
 
 **--> OPERATIONS TO THE SAMPLE DATA DESCRIBED**
 
