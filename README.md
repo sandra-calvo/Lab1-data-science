@@ -48,7 +48,7 @@ In the picture above you can see the collection of IBM Cloud tools we are going 
 
 **Data Refinery** it’s a self-service data preparation client for data scientists, data engineers, and business analysts. With it, you can quickly transform large amounts of raw data into consumable, quality information that’s ready for analytics. Data Refinery makes it easy to explore, prepare, and deliver data that people across your organization can trust.
 
-## Step 1: Create a Watson Studio Project
+### Step 1: Create a Watson Studio Project
 Before we start with the data preparation we need to create a project in Watson Studio. In order to create a project login to Watson Studio: https://eu-gb.dataplatform.ibm.com/ 
 
 To create a project with all tools click on the _New Project_ icon in the dashboard. 
@@ -79,7 +79,7 @@ Click on _Refresh_ and you will see the Cloud Object Storage service associated 
 
 Your project is ready! 👍
 
-## Step 2: Add data to your project
+### Step 2: Add data to your project
 
 After you create a project, you add data assets to it so that you can work with data. All the collaborators in the project are automatically authorized to access the data in the project. 
 You can add data assets from these sources to legacy projects:
@@ -97,7 +97,7 @@ Browse the file or drag them onto the Load pane.
 
 The files are saved in the object storage that is associated with your project and are listed as data assets on the Assets page of your project.
 
-## Step 3: Data refinery
+### Step 3: Data refinery
 
 Refining data consists of cleansing and shaping it. When you cleanse data, you fix or remove data that is incorrect, incomplete, improperly formatted, or duplicated. And when you shape data, you customize it by filtering, sorting, combining or removing columns, and performing operations.
 
@@ -140,20 +140,20 @@ Click _Save and Run_.
 ## Data analysis using Modeler
 **Modele: Flow editor** You can create a machine learning flow, which is a graphical representation of a data model, or a deep learning flow, which is a graphical representation of a neural network design, by using the Flow Editor. Use it to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file.
 
-## Step 4: 
+### Step 4: 
 
-## Step 5:
+### Step 5:
 
 # PHASE 3
 ## Create your custom machine learning model
 
-## Step 6:
+### Step 6:
 
 # PHASE 4
 ## Deploy ML model
 **IBM Watson Machine Learning** is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications. The Machine Learning service is a set of REST APIs that you can call from any programming language to develop applications that make smarter decisions, solve tough problems, and improve user outcomes.
 
-## Step 7: Create a Watson machine learing service
+### Step 7: Create a Watson machine learing service
 
 To design, train, and deploy machine learning models in IBM Watson Studio, you need to associate an IBM Watson Machine Learning service instance, as well as some supporting services (such as IBM Cloud Object Storage), with a project.
 
@@ -182,9 +182,9 @@ Great! You created a Watson Machine Learning service and associated it with your
 
 <img src="/images/Model6.png" width="70%" height="70%">
 
-## Step 8: Deploy the ML model
+### Step 8: Deploy the ML model
 
-## Step 9: Test the ML model
+### Step 9: Test the ML model
 
 # PHASE 5
 ## OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
