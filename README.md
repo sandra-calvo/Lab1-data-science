@@ -35,7 +35,8 @@ In the picture above you can see the collection of IBM Cloud tools we are going 
       - Watson Assistant - Bot service integration 
 
 
-# PHASE 1: Data Preparation using Data Refinery
+# PHASE 1
+## Data Preparation using Data Refinery
 
 **Data Refinery** it’s a self-service data preparation client for data scientists, data engineers, and business analysts. With it, you can quickly transform large amounts of raw data into consumable, quality information that’s ready for analytics. Data Refinery makes it easy to explore, prepare, and deliver data that people across your organization can trust.
 
@@ -100,7 +101,7 @@ In this lab we will create a new .csv file with our refined data set.
 
 Open Data Refinery by clicking Tools > Data Refinery.
 
-<img src="/images/DR1.png" width="50%" height="50%">
+<img src="/images/DR1.png" width="30%" height="30%">
 
 Select the project you want to work in and then click _Select Data_ to select the data you want to work with.
 
@@ -108,7 +109,7 @@ Select the project you want to work in and then click _Select Data_ to select th
 
 On the Data tab, apply operations to cleanse, shape, and enrich your data. You can enter R code in the command line and let autocomplete assist you in getting the syntax right. Or you can use the Operations menu to browse operation categories or search for a specific operation, then let the UI guide you.
 
-<img src="/images/DR3.png" width="60%" height="60%">
+<img src="/images/DR3.png" width="30%" height="30%">
 
 **--> OPERATIONS TO THE SAMPLE DATA DESCRIBED**
 
