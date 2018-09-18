@@ -8,7 +8,7 @@ In this guide:
   - [PHASE 2](#phase-2): Data analysis using Modeler
   - [PHASE 3](#phase-3): Create your custom machine learning model 
   - [PHASE 4](#phase-4): Deploy ML model 
-  - [PHASE 5](#phase-5): Data science with Jupyter Notebooks in Python, R or Scala
+  - [PHASE 5](#phase-5): OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
 
 
 #### Prerequisites
@@ -187,7 +187,7 @@ Great! You created a Watson Machine Learning service and associated it with your
 ## Step 9: Test the ML model
 
 # PHASE 5
-## Data science with Jupyter Notebooks in Python, R or Scala
+## OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
 A Jupyter notebook is a web-based environment for interactive computing. You can run small pieces of code that process your data, and you can immediately view the results of your computation. Notebooks include all of the building blocks you need to work with data:
 
     The data
