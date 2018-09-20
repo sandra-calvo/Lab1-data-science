@@ -114,7 +114,7 @@ Open Data Refinery by clicking Tools > Data Refinery.
 
 Select the project you want to work in and then click _Select Data_ to select the data you want to work with.
 
-<img src="/images/DR2.png" width="100%" height="100%">
+<img src="/images/DR2.png" width="70%" height="70%">
 
 On the Data tab, apply operations to cleanse, shape, and enrich your data. You can enter R code in the command line and let autocomplete assist you in getting the syntax right. Or you can use the Operations menu to browse operation categories or search for a specific operation, then let the UI guide you.
 
