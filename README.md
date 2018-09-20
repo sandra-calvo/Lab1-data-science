@@ -135,15 +135,61 @@ b. In the Data flow output pane, optionally edit the name of the target data set
 
 Click _Save and Run_.
 
-**SANDRA** https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?context=analytics&linkInPage=true
+**ONLY FOR SANDRA** https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?context=analytics&linkInPage=true
 
 # PHASE 2
 ## Data analysis using Modeler
-**Modele: Flow editor** You can create a machine learning flow, which is a graphical representation of a data model, or a deep learning flow, which is a graphical representation of a neural network design, by using the Flow Editor. Use it to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file.
+**Modeler Flow editor** You can create a machine learning flow, which is a graphical representation of a data model, or a deep learning flow, which is a graphical representation of a neural network design, by using the Flow Editor. Use it to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file.
 
-### Step 4: 
+### Step 4: Create a modeler flow and import the stream
+Create a machine learning flow to build your model. You can create a new flow or import an existing SPSS Modeler stream file.
+From the toolbar for Watson Studio, click _Tools_ and then click _Modeler_.
 
-### Step 5:
+<img src="/images/Modeler1.png" width="30%" height="30%">
+
+In this case we are importing an existing file to save time, so select the _From File_ tab and import the file **SPSS-STREAMS-EXAMPLE.srt** located in the box foldex **LINK TO BOX** 
+Type a name and description for your machine learning flow and select the project associated with this flow.
+Select SPSS Modeler as the flow type. Select a runtime environment, such as IBM SPSS Modeler. Click Create.
+
+<img src="/images/Modeler2.png" width="80%" height="80%">
+
+### Step 5: Explore the modeler flow
+
+After creating the flow you should see a flow like this:
+
+<img src="/images/Modeler3.png" width="80%" height="80%">
+
+**FLOW EXPLAINED - check with Lasse**
+The first node, **Data Assets**, selects the data file from our project to work in the Modeler. If you double clik on the node you will be able to change the data set. Click on _Change DataSet_ and select the refined data set we created in the first phase of this lab. 
+Then click _Save_.
+
+<img src="/images/Modeler4.png" width="80%" height="80%">
+
+Second node, **Type**, specifies field metadata and properties. In this node we configured our target variable and confirmed the type of the inputs. You can specify a measurement level (continuous, nominal, ordinal, or flag) for each field, set options for handling missing values and system nulls, set the role of a field for modeling purposes, specify field and value labels, and specify values for a field.
+
+Double clik in the Type node and click on _Configure Types_ to see what are the types of the inputs and which is our target. 
+
+<img src="/images/Modeler5.png" width="30%" height="30%">
+
+Next, **Partition** node. Partition nodes are used to generate a partition field that splits the data into separate subsets or samples for the training, testing, and validation stages of model building. In this case we split the data 80/20- 80% for trainig and 20% for testing. 
+
+Double click on the Partition node to check the configuration. 
+
+<img src="/images/Modeler6.png" width="50%" height="50%">
+
+**AVERAGE NODES ????**
+
+Lastly, **Analysis** node. The Analysis node can provide valuable information about the model itself. The Analysis node evaluates predictive models' ability to generate accurate predictions. Analysis nodes perform various comparisons between predicted values and actual values for one or more model nuggets. They can also compare predictive models to each other.
+
+Double click on the Analysis node to see how our model is performing. 
+
+**image missing**
+
+To open and close the palette, from the Flow Editor toolbar, click the Open/Close Palette icon.
+
+<img src="/images/Modeler8.png" width="30%" height="30%">
+
+More information about the nodes: https://dataplatform.cloud.ibm.com/docs/content/analyze-data/ml-canvas-spss.html 
 
 # PHASE 3
 ## Create your custom machine learning model
