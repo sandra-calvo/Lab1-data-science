@@ -245,3 +245,18 @@ A Jupyter notebook is a web-based environment for interactive computing. You can
    - The code computations that process the data
    - Visualizations of the results
    - Text and rich media to enhance understanding
+   
+
+After you set up a project and configured the environment, you can create a notebook file, copy a sample notebook from the Community, or add a notebook from a catalog. 
+
+To create a notebook click on _New Notebook_ in your project view 
+
+<img src="/images/Notebook1.png" width="80%" height="80%">
+
+In this lab we are going to import a Jupyter notebook that analyses the sample data with Python. Select _From File_ tab and browse from your computer the downloaded notebook from the BOX folder. **Jupyter notebook name**
+Select the runtime free runtime: _Default Python 3.5 (1 vCPU and 4GB RAM) and click on _Create Notebook_.
+
+<img src="/images/Notebook2.png" width="80%" height="80%">
+
+**EXPLAIN THE CONTENT OF THE NOTEBOOK**
+
