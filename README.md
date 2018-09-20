@@ -15,6 +15,9 @@ In this guide:
 - IBM Cloud account
   - Create a free account www.bluemix.net
   
+- Download the contents of the Box folder: https://ibm.box.com/v/workshop260918 
+  - Password will be delivered during the workshop.
+  
 # Overview 
 
 The purpose of this lab is to guide the user in the data science life cycle from raw data to an application with a machine learning model. All this using IBM Cloud tools. 
@@ -89,7 +92,7 @@ You can add data assets from these sources to legacy projects:
     Database connections
     
 In this lab we will add a simple .csv file from our local collection. 
-Download the file from this link: https://ibm.box.com/v/dataset - Password will be delivered during the workshop - 
+From the downloaded file's we are using the .csv file named **"Watson_Studio-sample_data.csv"**.
 
 From your project's _Assets_ page, click the Find and add data icon (<img src="/images/Icon1.png" width="3%" height="3%">).
 
@@ -147,7 +150,8 @@ From the toolbar for Watson Studio, click _Tools_ and then click _Modeler_.
 
 <img src="/images/Modeler1.png" width="30%" height="30%">
 
-In this case we are importing an existing file to save time, so select the _From File_ tab and import the file **SPSS-STREAMS-EXAMPLE.srt** located in the box foldex **LINK TO BOX** 
+In this case we are importing an existing file to save time, so select the _From File_ tab and import the file **Stream_example.srt** located in the box foldex https://ibm.box.com/v/workshop260918 where all the inputs of the workshop are stored. 
+
 Type a name and description for your machine learning flow and select the project associated with this flow.
 Select SPSS Modeler as the flow type. Select a runtime environment, such as IBM SPSS Modeler. Click Create.
 
@@ -237,7 +241,7 @@ Great! You created a Watson Machine Learning service and associated it with your
 ## OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
 A Jupyter notebook is a web-based environment for interactive computing. You can run small pieces of code that process your data, and you can immediately view the results of your computation. Notebooks include all of the building blocks you need to work with data:
 
-    The data
-    The code computations that process the data
-    Visualizations of the results
-    Text and rich media to enhance understanding
+   - The data
+   - The code computations that process the data
+   - Visualizations of the results
+   - Text and rich media to enhance understanding
