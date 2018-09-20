@@ -157,13 +157,13 @@ Select SPSS Modeler as the flow type. Select a runtime environment, such as IBM 
 
 After creating the flow you should see a flow like this:
 
-<img src="/images/Modeler3.png" width="80%" height="80%">
+<img src="/images/Modeler3.png" width="100%" height="100%">
 
 **FLOW EXPLAINED - check with Lasse**
 The first node, **Data Assets**, selects the data file from our project to work in the Modeler. If you double clik on the node you will be able to change the data set. Click on _Change DataSet_ and select the refined data set we created in the first phase of this lab. 
 Then click _Save_.
 
-<img src="/images/Modeler4.png" width="80%" height="80%">
+<img src="/images/Modeler4.png" width="30%" height="30%">
 
 Second node, **Type**, specifies field metadata and properties. In this node we configured our target variable and confirmed the type of the inputs. You can specify a measurement level (continuous, nominal, ordinal, or flag) for each field, set options for handling missing values and system nulls, set the role of a field for modeling purposes, specify field and value labels, and specify values for a field.
 
@@ -175,7 +175,7 @@ Next, **Partition** node. Partition nodes are used to generate a partition field
 
 Double click on the Partition node to check the configuration. 
 
-<img src="/images/Modeler6.png" width="50%" height="50%">
+<img src="/images/Modeler6.png" width="30%" height="30%">
 
 **AVERAGE NODES ????**
 
