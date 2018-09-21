@@ -124,7 +124,6 @@ On the Data tab, apply operations to cleanse, shape, and enrich your data. You c
 
 **STEPS DESCRIBED**
 
-
 When you've refined the sample data set to suit your needs, click the _Run data flow_ icon in the toolbar to run the data flow on the entire data set.
 
 By default, Data Refinery uses the name of the data source to name the data flow and the target data set. You can change these names, but you can't change the project that these data assets belong to.
@@ -214,13 +213,11 @@ Next, let's see the Statistics. **INSIGHTS ON THE STATISTICS AND EXPLANATION ON 
 Lastly, the table output only shows the selected time of the year, in that path, for our analysis. 
 
 
-### Step 7:
-
 # PHASE 3
 ## Deploy ML model using Watson Machine Learning
 **IBM Watson Machine Learning** is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications. The Machine Learning service is a set of REST APIs that you can call from any programming language to develop applications that make smarter decisions, solve tough problems, and improve user outcomes.
 
-### Step 8: Create a Watson machine learing service
+### Step 7: Create a Watson machine learing service
 
 To design, train, and deploy machine learning models in IBM Watson Studio, you need to associate an IBM Watson Machine Learning service instance, as well as some supporting services (such as IBM Cloud Object Storage), with a project.
 
@@ -249,9 +246,9 @@ Great! You created a Watson Machine Learning service and associated it with your
 
 <img src="/images/Model6.png" width="70%" height="70%">
 
-### Step 9: Deploy the ML model
+### Step 8: Deploy the ML model
 
-### Step 10: Test the ML model
+### Step 9: Test the ML model
 
 # PHASE 4
 ## OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
