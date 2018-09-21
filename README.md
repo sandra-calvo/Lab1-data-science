@@ -5,10 +5,9 @@ In this guide:
   - [Overview](#overview)
   - [Introduction](#introduction)
   - [PHASE 1](#phase-1): Data Preparation using Data Refinery
-  - [PHASE 2](#phase-2): Data analysis using Modeler
-  - [PHASE 3](#phase-3): Create your custom machine learning model 
-  - [PHASE 4](#phase-4): Deploy ML model 
-  - [PHASE 5](#phase-5): OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
+  - [PHASE 2](#phase-2): Data analysis & create a custom model using Modeler
+  - [PHASE 3](#phase-3): Deploy ML model using Watson Machine Learning
+  - [PHASE 3](#phase-4): OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
 
 
 #### Prerequisites
@@ -139,7 +138,7 @@ Click _Save and Run_.
 **ONLY FOR SANDRA** https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?context=analytics&linkInPage=true
 
 # PHASE 2
-## Data analysis using Modeler
+## Data analysis & create a custom model using Modeler
 **Modeler Flow editor** You can create a machine learning flow, which is a graphical representation of a data model, or a deep learning flow, which is a graphical representation of a neural network design, by using the Flow Editor. Use it to prepare or shape data, train or deploy a model, or transform data and export it back to a database table or file.
 
 ### Step 4: Create a modeler flow and import the stream
@@ -197,15 +196,28 @@ More information about the nodes: https://dataplatform.cloud.ibm.com/docs/conten
 
 ### Step 6: Run the flow
 
+Once you have explored the flow click on the _Run_ icon on the tool bar. 
 
+<img src="/images/Modeler9.png" width="30%" height="30%">
 
-# PHASE 3
-## Create your custom machine learning model
+After few minutes your flow will show the ouputs of the Statistics, Table and Analysis nodes on the right.
+
+<img src="/images/Modeler10.png" width="30%" height="30%">
+
+Double click in the Analysis to see how our model is performing. 
+**INSIGHTS ON THE PERFORMANCE**
+
+<img src="/images/Modeler11.png" width="60%" height="60%">
+
+Next, let's see the Statistics. **INSIGHTS ON THE STATISTICS AND EXPLANATION ON WHY THERE ARE 2 - DIFFERENCES**
+
+Lastly, the table output only shows the selected time of the year, in that path, for our analysis. 
+
 
 ### Step 7:
 
-# PHASE 4
-## Deploy ML model
+# PHASE 3
+## Deploy ML model using Watson Machine Learning
 **IBM Watson Machine Learning** is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications. The Machine Learning service is a set of REST APIs that you can call from any programming language to develop applications that make smarter decisions, solve tough problems, and improve user outcomes.
 
 ### Step 8: Create a Watson machine learing service
@@ -237,11 +249,11 @@ Great! You created a Watson Machine Learning service and associated it with your
 
 <img src="/images/Model6.png" width="70%" height="70%">
 
-### Step 8: Deploy the ML model
+### Step 9: Deploy the ML model
 
-### Step 9: Test the ML model
+### Step 10: Test the ML model
 
-# PHASE 5
+# PHASE 4
 ## OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
 A Jupyter notebook is a web-based environment for interactive computing. You can run small pieces of code that process your data, and you can immediately view the results of your computation. Notebooks include all of the building blocks you need to work with data:
 
