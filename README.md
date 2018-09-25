@@ -133,21 +133,24 @@ In this case we are simply going to change the name of the columns in our data s
   - visibility_under550
   - snowDepth_over_ 10cm
   - flights
+  
+Please, do not change the names of the columns to anything else than the names above. Otherwise you will need to do several changes in the next steps and in the application development part. 
 
-Confirm that the first column, puntuality, is using a dot as a decimal separator and not a comma. If you are using Excel in Finnish it will automatically use comma.  If your data set has a comma as decimal separator click on _Operation_ button and then 
+Confirm that the first column, puntuality, is using a dot as a decimal separator and not a comma. If you are using Excel in Finnish it will automatically use comma.  If your data set has a comma as decimal separator click on _Operation_ button and then replace substring and change the "," for ".".
 
 On the right side you will see all the steps and refinements done to your data set. 
 
 When you've refined the sample data set to suit your needs, click the _Run data flow_ (PLAY) icon in the toolbar to run the data flow on the entire data set.
 
-<img src="/images/DR4.png" width="50%" height="50%">
+<img src="/images/DR4.png" width="80%" height="80%">
 
 By default, Data Refinery uses the name of the data source to name the data flow and the target data set. You can change these names, but you can't change the project that these data assets belong to.
 In this case the data refinery will add the word "shaped" to our original file name. 
 
 Click _Save and Run_.
 
-Then click on View Flow to see your data refinery flows. It is possible to schedule processes.
+Then click on View Flow to see your data refinery flows. Note that it is possible to schedule processes.
+
 Your data is ready! Let's go back to the project view. 
 
 # PHASE 2
@@ -160,7 +163,7 @@ From the toolbar for Watson Studio, click _Tools_ and then click _Modeler_.
 
 <img src="/images/Modeler1.png" width="30%" height="30%">
 
-In this case we are importing an existing file to save time, so select the _From File_ tab and import the file **Strem_flow.srt** located in the box foldex https://ibm.box.com/v/workshop260918 where all the inputs of the workshop are stored. 
+In this case we are importing an existing file to save time, so select the _From File_ tab and import the file **Punctuality_Flow.srt** located in the box foldex https://ibm.box.com/v/workshop260918 where all the inputs of the workshop are stored. 
 
 Type a name and description for your machine learning flow and select the project associated with this flow.
 Select SPSS Modeler as the flow type. Select a runtime environment, such as IBM SPSS Modeler. Click _Create_.
@@ -173,7 +176,10 @@ After creating the flow you should see a flow like this:
 
 <img src="/images/Modeler3.png" width="100%" height="100%">
 
-The first node, **Data Assets**, selects the data file from our project to work in the Modeler. Double clik on the node you will be able to select the data set from your project. Click on _Change DataSet_ and select the refined data set we created in the first phase of this lab. Click _OK_ and then _Save_.
+This flow takes the data set as an input, analyses the data and also creates a custom machine learning model.
+We will need to update few nodes before we run the flow. 
+
+First node, **Data Assets**, selects the data file from our project to work in the Modeler. Double clik on the node you will be able to select the data set from your project. Click on _Change DataSet_ and select the refined data set we created in the first phase of this lab. Click _OK_ and then _Save_.
 
 <img src="/images/Modeler4.png" width="30%" height="30%">
 
@@ -185,9 +191,18 @@ Double clik in the Type node and click on _Configure Types_ to see what are the 
 
 <img src="/images/Modeler5.png" width="30%" height="30%">
 
-Then **Statistics** node, which gives you basic summary information about numeric fields. You can get summary statistics for individual fields and correlations between fields.
+_Clear all values_ then click on _Read values_. Mark "punctuality" as the target in the role column and change the measure in the month value to Categorical. Click _OK_.
 
-Next, **Partition** node. Partition nodes are used to generate a partition field that splits the data into separate subsets or samples for the training, testing, and validation stages of model building. In this case we split the data 80/20- 80% for trainig and 20% for testing. 
+<img src="/images/Modeler12.png" width="50%" height="50%">
+
+**Statistics** node gives you basic summary information about numeric fields. You can get summary statistics for individual fields and correlations between fields.
+In this case we created statistics for the whole dataset and for the winter period, using the **Select** node. You can use Select nodes to select or discard a subset of records from the data stream based on a specific condition, such as BP (blood pressure) = "HIGH".
+
+**Filter** node creates filter fields that are not used by rules in the rule set. The filtering (dropping) of fields and the renaming of fields are implemented by using separate tabs. In this case we are using it to create a new dataset with reduced columns for our model. 
+
+**Data Asset** output node will create a data set with our filtered data called **MLInputData.csv** which we will use for themodel. 
+
+**Partition** node. Partition nodes are used to generate a partition field that splits the data into separate subsets or samples for the training, testing, and validation stages of model building. In this case we split the data 80/20- 80% for trainig and 20% for testing. 
 
 Double click on the Partition node to check the configuration. 
 
@@ -217,18 +232,24 @@ After few minutes your flow will show the ouputs of the Statistics, Table and An
 
 <img src="/images/Modeler10.png" width="30%" height="30%">
 
-Double click in the Analysis to see how our model is performing. 
-**INSIGHTS ON THE PERFORMANCE**
+Double click in the Statistcs to see how our data behaves. 
 
 <img src="/images/Modeler11.png" width="60%" height="60%">
 
-Next, let's see the Statistics. **INSIGHTS ON THE STATISTICS AND EXPLANATION ON WHY THERE ARE 2 - DIFFERENCES**
+If you hover your mouse on the orange node three dots will appear in the right side of the box. Click in the dots and then _View Model_. Here you will see your model accuracy. 
 
-Lastly, the table output only shows the selected time of the year, in that path, for our analysis. 
+<img src="/images/Modeler13.png" width="30%" height="30%">
 
+<img src="/images/Modeler14.png" width="30%" height="30%">
+
+Before we deploy our model we need to create a machine learning service. 
+When you are ready to move to the next step go back to the project view by clicking in the name of your project.
+
+<img src="/images/Modeler15.png" width="30%" height="30%">
 
 # PHASE 3
 ## Deploy ML model using Watson Machine Learning
+
 **IBM Watson Machine Learning** is a full-service IBM Cloud offering that makes it easy for developers and data scientists to work together to integrate predictive capabilities with their applications. The Machine Learning service is a set of REST APIs that you can call from any programming language to develop applications that make smarter decisions, solve tough problems, and improve user outcomes.
 
 ### Step 7: Create a Watson machine learing service
