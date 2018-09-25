@@ -7,7 +7,7 @@ In this guide:
   - [PHASE 1](#phase-1): Data Preparation using Data Refinery
   - [PHASE 2](#phase-2): Data analysis & create a custom model using Modeler
   - [PHASE 3](#phase-3): Deploy ML model using Watson Machine Learning
-  - [PHASE 3](#phase-4): OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
+  - [PHASE 4](#phase-4): OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
 
 
 #### Prerequisites
