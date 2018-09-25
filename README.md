@@ -196,7 +196,7 @@ _Clear all values_ then click on _Read values_. Mark "punctuality" as the target
 <img src="/images/Modeler12.png" width="50%" height="50%">
 
 **Statistics** node gives you basic summary information about numeric fields. You can get summary statistics for individual fields and correlations between fields.
-In this case we created statistics for the whole dataset and for the winter period, using the **Select** node. You can use Select nodes to select or discard a subset of records from the data stream based on a specific condition, such as BP (blood pressure) = "HIGH".
+In this case we created statistics for the whole dataset and for the winter period, using the **Select** node. You can use Select nodes to select or discard a subset of records from the data stream based on a specific condition.
 
 **Filter** node creates filter fields that are not used by rules in the rule set. The filtering (dropping) of fields and the renaming of fields are implemented by using separate tabs. In this case we are using it to create a new dataset with reduced columns for our model. 
 
@@ -229,17 +229,13 @@ Once you have explored the flow click on the _Run_ icon on the tool bar.
 <img src="/images/Modeler9.png" width="30%" height="30%">
 
 After few minutes your flow will show the ouputs of the Statistics, Table and Analysis nodes on the right.
-
 <img src="/images/Modeler10.png" width="30%" height="30%">
 
 Double click in the Statistcs to see how our data behaves. 
 
-<img src="/images/Modeler11.png" width="60%" height="60%">
-
 If you hover your mouse on the orange node three dots will appear in the right side of the box. Click in the dots and then _View Model_. Here you will see your model accuracy. 
 
-<img src="/images/Modeler13.png" width="30%" height="30%">
-
+<img src="/images/Modeler13.png" width="25%" height="25%">
 <img src="/images/Modeler14.png" width="30%" height="30%">
 
 Before we deploy our model we need to create a machine learning service. 
@@ -283,7 +279,48 @@ Great! You created a Watson Machine Learning service and associated it with your
 
 ### Step 8: Deploy the ML model
 
+Let's go back to our Modeler flow. 
+In the project dashboard, _Asset_ tab, under Modeler Flows you will see the flow created in the previous step. 
+Click on the flow to open it again. 
+
+Hover with your cursor in the green regression node and click on the three dots to open the menu. Click on _Save Branch as a model_.
+
+<img src="/images/Model7.png" width="70%" height="70%">
+
+We need to deploy our model using Watson Machine Learning service. Give your model a name and select the machine learning service from your project. Click _Save_. The model will be saved to your project. You can access your
+model and create deployments from the Models section under Assets.
+
+<img src="/images/Model8.png" width="70%" height="70%">
+
+A message will be prompted when the model is saved. You can close this window. You will be directed back to the modeler flow, but we don't need to do any more changes here. 
+
+Go back to the dashboard of your projec and under Watson Machine Learning Models you will see the saved model already trained. It is not deployed yet, so click on the model's name to open it. 
+
+<img src="/images/Model9.png" width="70%" height="70%">
+
+Click on _Deployments_ tab and then click on _Add Deployment_
+
+<img src="/images/Model10.png" width="70%" height="70%">
+
+Give your deployment a name and click _Save_.
+
+<img src="/images/Model11.png" width="70%" height="70%">
+
+You will see your deployment in process for few minutes. 
+
+<img src="/images/Model12.png" width="70%" height="70%">
+
 ### Step 9: Test the ML model
+
+Once your model's staus says Deployment success click on the deployment name to access the model. 
+
+<img src="/images/Model13.png" width="70%" height="70%">
+
+If you click on the _Test_ tab you will be able to input the parameters to send to the model and see a prediction. 
+
+We will use this model in Lab 2. 
+
+
 
 # PHASE 4
 ## OPTIONAL - Data science with Jupyter Notebooks in Python, R or Scala
@@ -306,5 +343,5 @@ Select the runtime free runtime: _Default Python 3.5 (1 vCPU and 4GB RAM) and cl
 
 <img src="/images/Notebook2.png" width="80%" height="80%">
 
-**EXPLAIN THE CONTENT OF THE NOTEBOOK**
+You will need to edit the credentials in the first box of the notebook. After that you can run the notebook by clicking on the run (PLAY) icon.
 
