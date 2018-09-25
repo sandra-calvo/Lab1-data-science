@@ -122,19 +122,33 @@ On the Data tab, apply operations to cleanse, shape, and enrich your data. You c
 
 <img src="/images/DR3.png" width="30%" height="30%">
 
-**STEPS DESCRIBED**
+In this case we are simply going to change the name of the columns in our data set. So click on the pen icon in each column and change the names to: 
+  - punctuality 
+  - period
+  - month
+  - acregs
+  - BKDPAX
+  - Fridays
+  - temp_under4C
+  - visibility_under550
+  - snowDepth_over_ 10cm
+  - flights
 
-When you've refined the sample data set to suit your needs, click the _Run data flow_ icon in the toolbar to run the data flow on the entire data set.
+Confirm that the first column, puntuality, is using a dot as a decimal separator and not a comma. If you are using Excel in Finnish it will automatically use comma.  If your data set has a comma as decimal separator click on _Operation_ button and then 
+
+On the right side you will see all the steps and refinements done to your data set. 
+
+When you've refined the sample data set to suit your needs, click the _Run data flow_ (PLAY) icon in the toolbar to run the data flow on the entire data set.
+
+<img src="/images/DR4.png" width="50%" height="50%">
 
 By default, Data Refinery uses the name of the data source to name the data flow and the target data set. You can change these names, but you can't change the project that these data assets belong to.
-
-a. In the Data flow details pane, optionally edit the name of the data flow and enter a description for it. You can also add a one-time or repeating schedule for the data flow.
-
-b. In the Data flow output pane, optionally edit the name of the target data set and enter a description for it. You can save the target data set to the project, to a connection, or to a connected data asset . If you save it to the project, you can save it as a new data asset (by default) or you can replace an existing data asset. To save the target data set to a connection or as a connected data asset or to replace an existing data asset, use Change Location.
+In this case the data refinery will add the word "shaped" to our original file name. 
 
 Click _Save and Run_.
 
-**ONLY FOR SANDRA** https://dataplatform.cloud.ibm.com/docs/content/refinery/refining_data.html?context=analytics&linkInPage=true
+Then click on View Flow to see your data refinery flows. It is possible to schedule processes.
+Your data is ready! Let's go back to the project view. 
 
 # PHASE 2
 ## Data analysis & create a custom model using Modeler
