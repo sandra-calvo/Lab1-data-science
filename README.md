@@ -210,7 +210,7 @@ Double click on the Partition node to check the configuration.
 
 For this simple model we used **Linear Regression**. Linear regression models predict a continuous target based on linear relationships between the target and one or more predictors. If you double click on the green linear regression node you will see the target and inputs of the model. 
 
-<img src="/images/Modeler7.png" width="30%" height="30%">
+<img src="/images/Modeler7.png" width="10%" height="10%">
 
 The orange node is the model node created in the first run. Since this is a flow created from a file it is already there. 
 
