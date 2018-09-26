@@ -318,7 +318,7 @@ If you click on the _Test_ tab you will be able to input the parameters to send 
 
 Write the following code and click _Predict_.
 
-```{"fields":["month","acregs","snowchangemorelimit"],"values":[[3,71,1]]} ```
+```{"fields":["month","acregs","snowDepth_over_ 10cm"],"values":[[3,71,1]]} ```
           
 You can change the values. In this example call to the model we used, March (3), 71 planes and days with lots of snow 1.
 
