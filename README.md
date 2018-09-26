@@ -214,8 +214,6 @@ For this simple model we used **Linear Regression**. Linear regression models pr
 
 The orange node is the model node created in the first run. Since this is a flow created from a file it is already there. 
 
-Let's see some information about the model with the **Analysis** node. The Analysis node evaluates predictive models' ability to generate accurate predictions. Analysis nodes perform various comparisons between predicted values and actual values for one or more model nuggets. They can also compare predictive models to each other.
-
 There are many other nodes in the modeler. Check them by opening the palette, from the Flow Editor toolbar, click the Open/Close Palette icon.
 
 <img src="/images/Modeler8.png" width="30%" height="30%">
