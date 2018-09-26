@@ -233,7 +233,7 @@ After few minutes your flow will show the ouputs of the Statistics, Table and An
 
 Double click in the Statistcs to see how our data behaves. 
 
-If you hover your mouse on the orange node three dots will appear in the right side of the box. Click in the dots and then _View Model_. Here you will see your model accuracy. 
+If you hover your mouse on the **Table** node three dots will appear in the right side of the box. Click in the dots and then _View Model_. Here you will see your model accuracy. 
 
 <img src="/images/Modeler13.png" width="25%" height="25%">
 <img src="/images/Modeler14.png" width="30%" height="30%">
@@ -317,6 +317,13 @@ Once your model's staus says Deployment success click on the deployment name to 
 <img src="/images/Model13.png" width="70%" height="70%">
 
 If you click on the _Test_ tab you will be able to input the parameters to send to the model and see a prediction. 
+
+Write the following code and click _Predict_.
+          {"fields":["month","acregs","snowchangemorelimit"],"values":[[3,71,1]]} 
+          
+You can change the values. In this example call to the model we used, March (3), 71 planes and days with lots of snow 1.
+
+<img src="/images/Model14.png" width="70%" height="70%">
 
 We will use this model in Lab 2. 
 
