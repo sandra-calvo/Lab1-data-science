@@ -285,7 +285,7 @@ Click on the flow to open it again.
 
 Hover with your cursor in the green regression node and click on the three dots to open the menu. Click on _Save Branch as a model_.
 
-<img src="/images/Model7.png" width="30%" height="30%">
+<img src="/images/Model7.png" width="60%" height="60%">
 
 We need to deploy our model using Watson Machine Learning service. Give your model a name and select the machine learning service from your project. Click _Save_. The model will be saved to your project. You can access your
 model and create deployments from the Models section under Assets.
@@ -319,7 +319,8 @@ Once your model's staus says Deployment success click on the deployment name to 
 If you click on the _Test_ tab you will be able to input the parameters to send to the model and see a prediction. 
 
 Write the following code and click _Predict_.
-          {"fields":["month","acregs","snowchangemorelimit"],"values":[[3,71,1]]} 
+
+```{"fields":["month","acregs","snowchangemorelimit"],"values":[[3,71,1]]} ```
           
 You can change the values. In this example call to the model we used, March (3), 71 planes and days with lots of snow 1.
 
