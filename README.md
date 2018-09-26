@@ -231,9 +231,9 @@ After few minutes your flow will show the ouputs of the Statistics, Table and An
 
 Double click in the Statistcs to see how our data behaves. 
 
-If you hover your mouse on the **Table** node three dots will appear in the right side of the box. Click in the dots and then _View Model_. Here you will see your model accuracy. 
+If you hover your mouse on the orange node three dots will appear in the right side of the box. Click in the dots and then _View Model_. Here you will see your model accuracy. 
 
-<img src="/images/Modeler13.png" width="25%" height="25%">
+<img src="/images/Modeler13a.png" width="25%" height="25%">
 <img src="/images/Modeler14.png" width="30%" height="30%">
 
 Before we deploy our model we need to create a machine learning service. 
@@ -281,9 +281,9 @@ Let's go back to our Modeler flow.
 In the project dashboard, _Asset_ tab, under Modeler Flows you will see the flow created in the previous step. 
 Click on the flow to open it again. 
 
-Hover with your cursor in the green regression node and click on the three dots to open the menu. Click on _Save Branch as a model_.
+Hover with your cursor in the table node and click on the three dots to open the menu. Click on _Save Branch as a model_.
 
-<img src="/images/Model7.png" width="30%" height="30%">
+<img src="/images/Modeler13.png" width="30%" height="30%">
 
 We need to deploy our model using Watson Machine Learning service. Give your model a name and select the machine learning service from your project. Click _Save_. The model will be saved to your project. You can access your
 model and create deployments from the Models section under Assets.
