@@ -210,7 +210,7 @@ Double click on the Partition node to check the configuration.
 
 For this simple model we used **Linear Regression**. Linear regression models predict a continuous target based on linear relationships between the target and one or more predictors. If you double click on the green linear regression node you will see the target and inputs of the model. 
 
-<img src="/images/Modeler7.png" width="10%" height="10%">
+<img src="/images/Modeler7.png" width="50%" height="50%">
 
 The orange node is the model node created in the first run. Since this is a flow created from a file it is already there. 
 
@@ -285,7 +285,7 @@ Click on the flow to open it again.
 
 Hover with your cursor in the green regression node and click on the three dots to open the menu. Click on _Save Branch as a model_.
 
-<img src="/images/Model7.png" width="60%" height="60%">
+<img src="/images/Model7.png" width="30%" height="30%">
 
 We need to deploy our model using Watson Machine Learning service. Give your model a name and select the machine learning service from your project. Click _Save_. The model will be saved to your project. You can access your
 model and create deployments from the Models section under Assets.
